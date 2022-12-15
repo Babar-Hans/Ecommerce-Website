@@ -218,9 +218,73 @@ ul{
 text-align: center;
 margin-bottom: 20px;
 }
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/* ----------------mediaquery------------------- */
+
+@media only screen and (max-width: 800px){
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+
+    }
+    .menu-icon{
+        display: inline-block;
+        cursor: pointer;
+        
+    }
+
+}
+@media only screen and (max-width: 700px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    }
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    }
+/* --------------media query 400px---------------- */
+@media only screen and (max-width: 400px){
+.row{
+    text-align: center;
+}
+.col-2, .col-3, .col-4{
+    flex-basis: 100%;
+}
+}
 
 
-
-
-
-
+@media only screen and (max-width: 200px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    }
