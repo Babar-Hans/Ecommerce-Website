@@ -269,9 +269,10 @@ select:focus{
     font-weight: bold;
 }
 .single-product, select{
-    display: block;
-    padding: 10px;
+    display: inline-block;
+    padding: 12px;
     margin-top: 20px;
+    height: 40px;
 }
 .single-product, input{
     padding-left: 10px;
@@ -279,7 +280,7 @@ select:focus{
     border: 1px solid #ff523b;
     margin-right: 10px;
     width: 50px;
-    height: 40px;
+    height:40px;
     font-size: 20px;
 }
 .single-product, input:focus{
@@ -291,21 +292,75 @@ select:focus{
         margin-left: 10px;
 }
 .small-container, .small-image-row{
+    position: relative;
     display: flex;
     justify-content: space-around;
 }
 .small-img-col{
-
     flex-basis: 20%;
     cursor: pointer;
+    color: #ff523b;
+}
+/* -------------cart-items-------------- */
+.cart-image{
+    margin: 70px auto;
+    flex-basis: 100%    ;
+}
+.cart-image  table{
+width: 100%;
+border-collapse: collapse;
+
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background-color: #ff523b;
+    font-weight: bold;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 50px;
+    height: 30px;
+    padding-left:10px;
+    font-size: 15px;
+}
+td a{
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    background: #ff523b;
+    padding: 5px 5px;
+    border-radius: 2px;
 }
 
-
-
-
-
-
-
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+width: 100%;
+max-width: 515px;
+border-top:3px solid #ff523b ;
+border-bottom:3px solid #ff523b ;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
 
 /* ----------------mediaquery------------------- */
 
